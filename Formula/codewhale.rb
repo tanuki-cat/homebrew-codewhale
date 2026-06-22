@@ -3,6 +3,7 @@ class Codewhale < Formula
   homepage "https://github.com/tanuki-cat/CodeWhale"
   version "0.8.63"
   license "MIT"
+  revision 1
 
   on_macos do
     if Hardware::CPU.arm?
