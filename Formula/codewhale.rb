@@ -1,42 +1,41 @@
 class Codewhale < Formula
   desc "Terminal-native coding agent for any model — open models first"
   homepage "https://github.com/tanuki-cat/CodeWhale"
-  version "0.8.63"
+  version "0.8.64"
   license "MIT"
-  revision 1
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/tanuki-cat/CodeWhale/releases/download/v0.8.63/codewhale-macos-arm64", using: :nounzip
-      sha256 "2b2cf11cba64e89a4abbc948f3cfb2cb3881a0a18abc8e2662ebd244bfff5a40"
+      url "https://github.com/tanuki-cat/CodeWhale/releases/download/v0.8.64/codewhale-macos-arm64", using: :nounzip
+      sha256 "08be8552d39fb1b5e51b3c2a0e96a9beeea64dd3a407eba7ec462555c46e4a3d"
       resource "tui" do
-        url "https://github.com/tanuki-cat/CodeWhale/releases/download/v0.8.63/codewhale-tui-macos-arm64", using: :nounzip
-        sha256 "3ef2a1bdbb1f5fd476e3206a98d61233c47f1e00e7850da4fa60ab761a9680e8"
+        url "https://github.com/tanuki-cat/CodeWhale/releases/download/v0.8.64/codewhale-tui-macos-arm64", using: :nounzip
+        sha256 "eb4b24f679d9e2537bf3263a51afa6eaec8475c72f32ff3f77627c8722a9fc83"
       end
     else
-      url "https://github.com/tanuki-cat/CodeWhale/releases/download/v0.8.63/codewhale-macos-x64", using: :nounzip
-      sha256 "02b2a9563c6f0889392fedbffa21f7c419e05543fb986c634f5e0c0f22fef912"
+      url "https://github.com/tanuki-cat/CodeWhale/releases/download/v0.8.64/codewhale-macos-x64", using: :nounzip
+      sha256 "0ce8af48d2710085905ffb9528b187f33dc2ba9a6d89d6f8a4b927024ae9f7aa"
       resource "tui" do
-        url "https://github.com/tanuki-cat/CodeWhale/releases/download/v0.8.63/codewhale-tui-macos-x64", using: :nounzip
-        sha256 "1cbf1fd2f188781ff76317dcbb858fb6768c171fb7a994b4694eaa0ff2b3cb2f"
+        url "https://github.com/tanuki-cat/CodeWhale/releases/download/v0.8.64/codewhale-tui-macos-x64", using: :nounzip
+        sha256 "001d80ff3d14720c5bc25adc1a213e4eda6c77e7f3235f6c9a03fe32de0e4cb3"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/tanuki-cat/CodeWhale/releases/download/v0.8.63/codewhale-linux-arm64", using: :nounzip
-      sha256 "96f018c0cdd5a9749e975f3328c5289f07cd6a6d3f8f603280624198c42f3a4f"
+      url "https://github.com/tanuki-cat/CodeWhale/releases/download/v0.8.64/codewhale-linux-arm64", using: :nounzip
+      sha256 "cd818f84e4baa110b396eab7ea0b8db7c5ab12d065e01c51efd89b4931df2ee3"
       resource "tui" do
-        url "https://github.com/tanuki-cat/CodeWhale/releases/download/v0.8.63/codewhale-tui-linux-arm64", using: :nounzip
-        sha256 "3d29192ac26b374be5de337332bd583b421ab5ac5b5919565f4239bb589d27fa"
+        url "https://github.com/tanuki-cat/CodeWhale/releases/download/v0.8.64/codewhale-tui-linux-arm64", using: :nounzip
+        sha256 "86e271090e8ba33cbd00eb42930fa19f7d1f50fee5c7e3e7329ccd017b57227e"
       end
     else
-      url "https://github.com/tanuki-cat/CodeWhale/releases/download/v0.8.63/codewhale-linux-x64", using: :nounzip
-      sha256 "edf641c7671522df554de6d31233baaa2bba382a420aee69d8bb738d0ba22bb1"
+      url "https://github.com/tanuki-cat/CodeWhale/releases/download/v0.8.64/codewhale-linux-x64", using: :nounzip
+      sha256 "39c81ad15ade08b8f65b68ec9504ccb3f5b03cb44c4e2706af275cd1bd586419"
       resource "tui" do
-        url "https://github.com/tanuki-cat/CodeWhale/releases/download/v0.8.63/codewhale-tui-linux-x64", using: :nounzip
-        sha256 "49d930fda24eb728c04211be54be1bdd441acc5167dfab2fa8724ec9d4ade6ff"
+        url "https://github.com/tanuki-cat/CodeWhale/releases/download/v0.8.64/codewhale-tui-linux-x64", using: :nounzip
+        sha256 "8f77c1475e15265e1266edc8617778d6ca99f8ebfcd8bf17d7efaa778f2463c2"
       end
     end
   end
